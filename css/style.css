@@ -1,3 +1,46 @@
+body {
+	font-family: sans-serif;
+}
+
 h1 {
-	color: red;
+	border-bottom: 1px solid black;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+div {
+	overflow: auto;
+	/*prevent div from being compressed, to recognise image is part of it. Weird thing about float*/
+}
+
+
+.main img {
+float: right;
+}
+
+.link {
+	padding-top: 20px;
+	border-top: 3px solid black;
+	text-align: center;
+}
+
+.main {
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+}
+
+h3 {
+	margin-top: 0px;
+}
+
+.pmain {
+	border-bottom: 1px solid black;
+}
+
+footer {
+	
+	text-align: center;
+	border-bottom: 3px solid black;
+	padding-bottom: 30px;
+	padding-top: 15px;
 }

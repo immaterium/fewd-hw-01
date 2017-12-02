@@ -2,6 +2,10 @@ body {
 	font-family: sans-serif;
 }
 
+p {
+	font-family: monospace;
+}
+
 h1 {
 	border-bottom: 1px solid black;
 	text-align: center;
@@ -22,6 +26,11 @@ float: right;
 	padding-top: 20px;
 	border-top: 3px solid black;
 	text-align: center;
+	font-family: sans-serif;
+}
+
+.why {
+	font-family: sans-serif;
 }
 
 .main {
@@ -44,3 +53,9 @@ footer {
 	padding-bottom: 30px;
 	padding-top: 15px;
 }
+
+/* margin:0 auto; is an important tool. auto means whatever space on the left and write, divid it equally
+/* This is an ID #image-list{}
+/* This is a class .image-list{}
+/* short hand for padding e.g. padding: 0 10px 0 0; this means clockwise from top, so top, right, bottom left
+/* short had for paddeing: 10px, ;

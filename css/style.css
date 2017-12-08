@@ -4,6 +4,7 @@ body {
 
 p {
 	font-family: monospace;
+	font-size: 15px;
 }
 
 h1 {
@@ -21,7 +22,7 @@ div {
 .main img {
 float: right;
 }
-
+ 
 .link {
 	padding-top: 20px;
 	border-top: 3px solid black;
@@ -46,6 +47,15 @@ h3 {
 	border-bottom: 1px solid black;
 }
 
+li {
+	font-family:monospace;
+	font-size: 15px;
+}
+
+.special {
+	font-family: sans-serif;
+}
+
 footer {
 	
 	text-align: center;
@@ -59,3 +69,52 @@ footer {
 /* This is a class .image-list{}
 /* short hand for padding e.g. padding: 0 10px 0 0; this means clockwise from top, so top, right, bottom left
 /* short had for paddeing: 10px, ;
+
+/*
+"multiple" class
+used to apply multiple scalable properties (class is for scalability) 
+In html
+button class="btn-pill blue"
+button class="btn-pill red"
+In CSS
+.btn-pill {border-radius: 9999px;}
+.btn-rounded {border-radius: 5px;}
+.blue {background-colour: blue;}
+.red {background-colour: red;}
+realise each class is still called separately, to call classes together, see "conditional" class
+
+"chained" class
+In CSS
+.btn-pill.red {...}
+Both conditions need to be fulfilled to be applied
+
+"multiple" class creates a new class, whereas "chained" class avoids creating new class, but modifies the existing class by chaining conditions to make it an exception
+
+change anchor text e.g. hyperlink blue text turns purple after clicking
+anchor <a href="..."> has 4 default states, that can be customised
+if don't want default state, use pseduo-class
+In CSS
+
+a {color: green;}
+
+a: hover,
+a: visited,
+a: active,
+a: focus, {
+color: orange;
+}
+
+selecting specific items in a list or any element like p
+In CSS
+first-child and nth-child
+li: nth-child(odd){
+	background-color: orange;
+}
+p: nth-child(3n+1){
+	background-color: orange;
+}
+
+using "blank" default stylesheet, rather than browser specific one, on top of your own stylesheet
+use the normalise one, link to that stylesheet first, then use own style
+
+
